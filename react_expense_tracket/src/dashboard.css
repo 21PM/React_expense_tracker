@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100%;
+}
+#profile{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid rgb(4, 166, 20); */
+    background-color: #0c142c;
+    color: white;
+
+}
+caption {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  caption-side: top;
+  text-align: center;
+  font-weight: bold;
+}
+
+#dashboard{
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid pink; */
+    background-color:#182341;
+    color: white;
+
+}
+#Profile-name{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+#listitems{
+    margin-top: 100px;
+    text-align: center;
+    line-height: 70px;
+}
+#dashborad_head_div{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+#dashborad_head_div span{
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+}
+#search_field{
+    margin-right: 50px;
+    height: 30px;
+    width: 20%;
+    border-radius: 3px;
+    
+}
+#Top_Outer_Div{
+    width: 92%;
+    /* padding: 5px 7px; */
+    /* border: 2px solid blueviolet; */
+    margin: auto;
+    margin-top: 0.5rem;
+    height: 55vh;
+    display: flex;
+    gap: 1rem   ;
+}
+#Bottom_Outer_Div{
+    width: 95%;
+    padding: 5px 7px;
+    /* border: 2px solid rgb(34, 102, 211); */
+    margin: auto;
+    margin-top: 0.5rem;
+    height: 31vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Top_Outer_Div_child1{
+    width: 60%;
+    /* border: 2px solid saddlebrown; */
+    /* padding: 2px 5px; */
+}
+#Top_Outer_Div_child2{
+    width: 40%;
+    /* border: 2px solid rgb(91, 139, 19); */
+    /* padding: 2px 5px; */
+    
+}
+#overview_div{
+    height: 35%;
+    /* border: 2px solid pink; */
+    border-radius: 1rem;
+    background-color:#182341;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 1rem;
+    align-items: center;
+
+}
+#expenses_chart_div{
+    height: 59%;
+    /* border:2px solid yellow; */
+    padding: 5px;
+    border-radius: 1rem;
+    background-color:#182341;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+
+}
+#expenses_chart_div h2{
+  margin-left: 3%;
+}
+#activites_div {
+    height: 95%;
+    /* background-color: #182341; */
+    border-radius: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow-y: auto; /* Enable scrolling for large content */
+    padding: 10px; /* Add some padding for better content spacing */
+  }
+  
+  .Transaction_history {
+    display: felx;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light separator line */
+    /* background-color: #1e2734; Darker background for transaction items */
+    color: white;
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+    cursor: pointer; /* Indicate clickable transactions */
+    animation: slide-in 0.5s ease-in forwards; /* Slide-in animation on load */
+  }
+  
+  .Transaction_history h3 {
+    margin-bottom: 5px; /* Adjust spacing between title and amount */
+  }
+  
+  .green,
+  .red {
+    font-weight: bold; /* Make amounts stand out visually */
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Slide up from bottom on load */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+#overview_div h4{
+    margin-left: 3rem;
+    padding-top: 20px;
+
+}
+#valuesDiv{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    padding: 5px 50px;
+    margin-top: 2%;
+}
+#valuesDiv h5{
+    font-size:small;
+    color: #ccc;
+}
+#valuesDiv p{
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+#Total_Sal_div{
+    color: green;
+}
+#Total_Exp_div{
+    color: rgb(255, 0, 0);
+}
+#Total_Bal_div{
+    color: rgb(255, 251, 0);
+}
+
+
+#Add_Transaction_Div{
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    height: 30vh;
+    margin-left: 1%;
+    padding: 10px;
+    align-items: center;
+}
+select {
+    /* Adjust these styles as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Optional: Add some background color */
+    background-color: #f5f5f5;
+  }
+  
+  select:focus {
+    /* Add a subtle outline on focus */
+    outline: 1px solid #ddd;
+  }
+  #name{
+    border-style: none;
+    border-radius: 2px;
+    padding: 3px;
+
+  }
+  #amount{
+    padding: 3px;
+    border-radius: 2px;
+    border-style: none;
+  }
+  
+  #inputdiv{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    /* border: 2px solid seagreen; */
+  }
+  #btn_div{
+    /* border: 2px solid yellow; */
+    display: flex;
+    margin-left: 35%;
+    margin-top: 5%;
+    
+  }
+  #Add_Button{
+    padding: 10px;
+    width: 30%;
+    background-color: purple;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  .Transaction_history{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.red{
+    color: red;
+}
+
+.green{
+    color: rgb(5, 162, 0);
+}
+#chart_div{
+  height: 90%;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+
+/* //*****************new code added from here this is original file ***************/
+
+
+
+
+#bottom-outer-div2-Chatbot{
+  /* border: 2px solid yellow; */
+  width: 39%;
+  margin-right: 1.7%;
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  border-radius: 1rem;
+  
+}
+#Bot-image{
+  cursor: pointer;
+}
+
+#Ai-article{
+  margin-top: 25px;
+  background-image: linear-gradient(to right, white, skyblue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#Chat-UI-DIV {
+  border: 2px solid rgb(13, 218, 13);
+  width: 90%;
+  z-index: 5;
+  overflow: auto;
+  border-radius: 10px;
+  margin-top: -55%;
+  margin-right: -23%;
+  margin-left: 10%;
+  background: linear-gradient(to bottom, #282879, #1e1e62);
+  display: none;
+  transition: display 1s ease-out; /* Add transition for display property */  
+  padding: 15px;
+}
+
+#Chat-UI-DIV::-webkit-scrollbar {
+  width: 6px; /* Adjust the width of the scrollbar */
+}
+
+#Chat-UI-DIV::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Change the color of the scrollbar thumb */
+  border-radius: 10px; /* Adjust the border radius of the scrollbar thumb */
+}
+
+
+.material-symbols-outlined{
+float: right;
+font-size: x-large;
+border-radius: 50%;
+cursor: pointer;
+
+}
+#main-Inside-bot{
+top: 100%;
+}
+.msg-container{
+height: 375px;
+
+/* border: 2px solid yellow; */
+}
+.user-input-div-gemini{
+position: fixed;
+margin-left: 0%;
+align-items: center;
+display: flex;
+border-radius: 1rem;
+/* display: block; */
+
+}
+.bot-msg{
+margin-bottom: 20px;
+}
+.user-quesion{
+display: none;
+}
+.bot-answer{
+display: none;
+
+}
+.user-input-gemini{
+padding:5px;
+width: 320px;
+background: linear-gradient(to bottom, #20203e, #494991);
+color: white;
+border-style: none;
+border-radius: 8px;
+border: 1px solid rgb(140, 191, 0);
+}
+
+.material-symbols-outlined:hover {
+border-color: rgb(255, 0, 0); /* Change border color on hover */
+transform: scale(1.09); /* Scale up slightly on hover */
+}
+.span-bot-sms{
+background: linear-gradient(to bottom, #282879, #1e1e62);
+border-end-start-radius: 20px;
+border-end-end-radius: 10px;
+border-start-end-radius: 10px;
+border-style:groove;
+padding: 7px;
+color: #ffffff;
+}
+.span-user-quesion{
+text-align: right;
+background: linear-gradient(to bottom, #282879, #1e1e62);
+border-end-start-radius: 10px;
+border-start-start-radius: 10px;
+border-end-end-radius: 10px;
+border-style:groove;
+/* padding: 7px; */
+color: #ffffff;
+float: right;
+display: grid;
+padding: 7px;
+/* margin-left: ; */
+
+}
+.span-bot-answer{
+margin-top: 75px;
+margin-bottom: 20px;
+background: linear-gradient(to bottom, #282879, #131346); 
+border-end-start-radius: 20px;
+border-end-end-radius: 10px;
+border-start-end-radius: 10px;
+border-style:groove;
+padding: 7px;
+padding-bottom: 40px;
+color: #ffffff;
+display: grid;
+}
+
+
+
+
+/***********Table **********/
+
+
+table {
+  z-index: 10;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2%;
+  /* display: none; */
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+#income-section {
+  margin-top: 20px;
+  text-align: center;
+  
+}
+#income {
+  width: 200px;
+  padding: 5px;
+  
+}
+#CalBtn{
+  cursor: pointer;
+  padding: 8px;
+  width: 15%;
+  border-style: none;
+  border-radius: 4px;
+  background-color: rgb(18, 98, 163);
+  color: white;
+}
+#tax-output {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+/* *************************table css end******************************* */
+
+
+
+/* // append this into dashboard for that need some changes********************* */
+
+#tax_out_contianer{
+  width: 43.5vw;
+  /* border: 2px solid yellow; */
+  height: 460px;
+  z-index: 10;
+  background-color: #0c142c;
+  position: relative;
+  /* margin-bottom: 200%; */
+  margin-left: 115%;
+  padding: 10px;
+  border-radius: 1rem;
+  display: none;
+
+}
+#rzp-button1{
+  padding: 8px;
+  width: 15%;
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(84, 205, 50);
+
+}
+#cal-pay-btn{
+  padding: 10px;
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(14, 188, 188);
+}
+#tax_close_btn{
+  cursor: pointer;
+  float: right;
+  text-align: center;
+  background-color: red;
+  width: 20px;
+  margin-top: -8px;
+  margin-right: -6px;
+}

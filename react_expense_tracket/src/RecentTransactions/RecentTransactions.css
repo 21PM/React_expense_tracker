@@ -1,0 +1,43 @@
+/* RecentTransactions.css */
+.recent-transactions {
+    background-color: #1a2238;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 70vh;
+    width: 95%;
+    margin: auto;
+  }
+  .deletediv{
+    display: flex;
+    column-gap: 25px;
+  }
+  .recent-transactions h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .transaction-name {
+    color: white;
+  }
+  
+  .transaction-amount.green {
+    color: green;
+  }
+  
+  .transaction-amount.red {
+    color: red;
+  }
+  
+  
